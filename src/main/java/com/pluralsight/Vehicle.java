@@ -54,7 +54,7 @@ public class Vehicle {
     }
 
  //setters
-    
+
     public void setVin(int vin) {
         this.vin = vin;
     }
@@ -87,4 +87,12 @@ public class Vehicle {
         this.price = price;
     }
 
+
+    @Override
+    public String toString() {
+        return vin + " | " + year + " | " + make + " | " + model + " | " +
+                vehicleType + " | " + color + " | " + odometer + " | $" + price;
+    }
 }
+
+

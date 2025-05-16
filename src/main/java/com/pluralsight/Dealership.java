@@ -61,32 +61,32 @@ private ArrayList<Vehicle> filterVehicles(Predicate<Vehicle> test){
 
     // iterations of the matches list per specific variables
 
-    public ArrayList<Vehicle> getVehicleByPrice(double min, double max){
+    public ArrayList<Vehicle> getVehiclesByPrice(double min, double max){
     return filterVehicles(vehicle ->
             vehicle.getPrice() >= min && vehicle.getPrice() <= max);
     }
 
-    public ArrayList<Vehicle> getVehicleByMakeModel(String make, String model){
+    public ArrayList<Vehicle> getVehiclesByMakeModel(String make, String model){
         return filterVehicles(vehicle ->
                 vehicle.getMake().equalsIgnoreCase(make) && vehicle.getModel().equalsIgnoreCase(model));
     }
 
-    public ArrayList<Vehicle> getVehicleByYear(int min, int max){
+    public ArrayList<Vehicle> getVehiclesByYear(int min, int max){
         return filterVehicles(vehicle ->
                 vehicle.getYear() >= min && vehicle.getYear() <= max);
     }
 
-    public ArrayList<Vehicle> getVehicleByColor(String color){
+    public ArrayList<Vehicle> getVehiclesByColor(String color){
         return filterVehicles(vehicle ->
                 vehicle.getColor().equalsIgnoreCase(color));
     }
 
-    public ArrayList<Vehicle> getVehicleByMileage(int min, int max){
+    public ArrayList<Vehicle> getVehiclesByMileage(int min, int max){
     return filterVehicles(vehicle ->
             vehicle.getOdometer() >= min && vehicle.getOdometer() <= max);
     }
 
-    public ArrayList<Vehicle> getVehicleByType(String vehicleType){
+    public ArrayList<Vehicle> getVehiclesByType(String vehicleType){
         return filterVehicles(vehicle ->
                 vehicle.getVehicleType().equalsIgnoreCase(vehicleType));
     }

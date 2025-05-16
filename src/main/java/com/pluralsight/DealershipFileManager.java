@@ -40,7 +40,7 @@ public class DealershipFileManager {
 
             reader.close();
         } catch (IOException e) {
-            System.out.println("Error reading dealership file: " + e.getMessage());
+            System.out.println("Problem reading dealership file: " + e.getMessage());
         }
 
         return dealership;
